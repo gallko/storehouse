@@ -1,4 +1,4 @@
-import json
+# from main import get_obj
 
 
 def get_obj(objs, number):

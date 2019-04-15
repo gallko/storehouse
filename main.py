@@ -2,6 +2,7 @@ from argparse import ArgumentParser
 import json
 import http.client
 from departs import Departs
+from gdocs import Gdocs
 
 
 class Request:
@@ -61,3 +62,6 @@ if __name__ == '__main__':
     replace = departs.choose_depart()
     print(replace)
 
+    docs = Gdocs(req, find, replace)
+    docs.update()
+    docs.replace()
